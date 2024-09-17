@@ -111,6 +111,7 @@ En caso de preferir hacer los ejercicios directamente en archivos usando tu prop
 
 - clona el repositorio (`git clone git@github.com:MostlyAdequate/mostly-adequate-guide-es.git`)
 - ve a la sección *exercises* (`cd mostly-adequate-guide-es/exercises`)
+- asegúrate de estar utilizando la versión recomendada de node, la v10.22.1 (por ejemplo con `nvm install`). Más información al respecto en [el readme del libro](./README.md#sobre-la-version-de-nodejs)
 - instala lo necesario usando [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (`npm install`)
 - completa las respuestas modificando los archivos llamados *exercise_&ast;* dentro del directorio del correspondiente capítulo 
 - ejecuta la corrección con npm (p. ej. `npm run ch04`)

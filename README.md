@@ -60,9 +60,39 @@ Encuentra archivos **PDF** y **EPUB** pregenerados como [artefactos construidos 
 
 > ⚠️ La preparación del proyecto es un poco antigua, puedes encontrarte con distintos problemas cuando lo construyas localmente. Recomendamos el uso de node v10.22.1 y la última versión de Calibre si es posible. 
 
+### Sobre la versión de nodejs
+
+Dado que la versión de node recomendada (v10.22.1) es algo antigua, es más que probable que no la tengas instalada en tu sistema. Puedes tener instaladas múltiples versiones de nodejs utilizando [nvm](https://github.com/nvm-sh/nvm). Dirígete a este proyecto para instalarlo y entonces podrás:
+
+ - Instalar cualquier versión de node que necesites:
+```
+nvm install 10.22.1
+nvm install 20.2.0
+```
+ - Y entonces podrás cambiar entre versiones de node:
+```
+nvm use 10.22.1
+node -v // will show v10.22.1 
+nvm use 20.2.0
+node -v // will show v20.2.0
+```
+
+Como este proyecto tiene un archivo .nvmrc puedes ejecutar `nvm install` y `nvm use` sin especificar la versión de node:
+```
+// estando en cualquier lugar dentro del proyecto
+nvm install
+node -v // will show v10.22.1
+```
+
+
+### Secuencia de comandos completa
+
+Teniendo en cuenta lo anterior acerca de tener nvm instalado en tu sistema, aquí está la secuencia completa de comandos para generar tú mismo los archivos pdf y epub:
+
 ```
 git clone https://github.com/MostlyAdequate/mostly-adequate-guide-es.git
 cd mostly-adequate-guide-es/
+nvm install
 npm install
 npm run setup
 npm run generate-pdf
