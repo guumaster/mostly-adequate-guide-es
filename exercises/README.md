@@ -30,6 +30,8 @@ tu propuesta puede ser verificada ejecutando:
 npm run ch04
 ```
 
+Recuerda instalar primero las dependencias estando en la versión de node recomendada por el proyecto. Más sobre esto en [el README principal del proyecto](../README.md#sobre-la-version-de-nodejs).
+
 Alternativamente, también puedes echar un vistazo al archivo con la solución que corresponda: en este caso
 `solution_a.js`. 
 
